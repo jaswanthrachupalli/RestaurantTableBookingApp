@@ -16,4 +16,5 @@
 /Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Service/bin/Debug/net7.0/RestaurantTableBookingApp.Data.dll
 /Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Service/bin/Debug/net7.0/RestaurantTableBookingApp.Core.pdb
 /Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Service/bin/Debug/net7.0/RestaurantTableBookingApp.Data.pdb
-/Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Service/obj/Debug/net7.0/RestaurantTableBookingApp.Service.csproj.CopyComplete
+/Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Service/obj/Debug/net7.0/RestaurantTableBookingApp.Service.sourcelink.json
+/Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Service/obj/Debug/net7.0/Restaura.D2221B54.Up2Date

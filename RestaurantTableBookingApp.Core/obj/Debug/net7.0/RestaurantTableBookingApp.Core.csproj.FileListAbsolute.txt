@@ -12,3 +12,4 @@
 /Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Core/obj/Debug/net7.0/RestaurantTableBookingApp.Core.pdb
 /Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Core/obj/Debug/net7.0/RestaurantTableBookingApp.Core.genruntimeconfig.cache
 /Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Core/obj/Debug/net7.0/ref/RestaurantTableBookingApp.Core.dll
+/Users/rachupallijaswanth/Projects/RestaurantTableBookingApp.Core/obj/Debug/net7.0/RestaurantTableBookingApp.Core.sourcelink.json
