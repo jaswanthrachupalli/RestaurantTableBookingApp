@@ -6,33 +6,35 @@ using Microsoft.EntityFrameworkCore;
 
 namespace RestaurantTableBookingApp.Core;
 
-[Index("RestaurantId", Name = "IX_RestaurantBranches_RestaurantId")]
 public partial class RestaurantBranch
 {
-    [Key]
     public int Id { get; set; }
 
     public int RestaurantId { get; set; }
 
-    [StringLength(100)]
+    [Required]
+    [MaxLength(100)]
     public string Name { get; set; } = null!;
 
-    [StringLength(200)]
+    [Required]
+    [MaxLength(200)]
     public string Address { get; set; } = null!;
 
-    [StringLength(20)]
+
+    [MaxLength(20)]
     public string? Phone { get; set; }
 
-    [StringLength(100)]
+
+    [MaxLength(100)]
     public string? Email { get; set; }
 
-    [StringLength(500)]
+
+    [MaxLength(500)]
     public string? ImageUrl { get; set; }
 
-    [InverseProperty("RestaurantBranch")]
     public virtual ICollection<DiningTable> DiningTables { get; set; } = new List<DiningTable>();
 
-    [ForeignKey("RestaurantId")]
-    [InverseProperty("RestaurantBranches")]
     public virtual Restaurant Restaurant { get; set; } = null!;
+
+
 }

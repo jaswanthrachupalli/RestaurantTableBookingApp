@@ -8,24 +8,28 @@ namespace RestaurantTableBookingApp.Core;
 
 public partial class Restaurant
 {
-    [Key]
     public int Id { get; set; }
 
-    [StringLength(100)]
+    [Required]
+    [MaxLength(100)]
     public string Name { get; set; } = null!;
 
-    [StringLength(200)]
+    [Required]
+    [MaxLength(200)]
     public string Address { get; set; } = null!;
 
-    [StringLength(20)]
+
+    [MaxLength(20)]
     public string? Phone { get; set; }
 
-    [StringLength(100)]
+
+    [MaxLength(100)]
     public string? Email { get; set; }
 
-    [StringLength(500)]
+
+    [MaxLength(500)]
     public string? ImageUrl { get; set; }
 
-    [InverseProperty("Restaurant")]
     public virtual ICollection<RestaurantBranch> RestaurantBranches { get; set; } = new List<RestaurantBranch>();
+
 }

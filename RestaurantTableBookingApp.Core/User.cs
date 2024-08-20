@@ -8,30 +8,24 @@ namespace RestaurantTableBookingApp.Core;
 
 public partial class User
 {
-    [Key]
     public int Id { get; set; }
 
-    [StringLength(50)]
+    [Required]
+    [MaxLength(50)]
     public string FirstName { get; set; } = null!;
-
-    [StringLength(50)]
+    [Required]
+    [MaxLength(50)]
     public string LastName { get; set; } = null!;
-
-    [StringLength(100)]
+    [Required]
+    [MaxLength(100)]
     public string Email { get; set; } = null!;
 
-    [StringLength(128)]
+    [MaxLength(128)]
     public string? AdObjId { get; set; }
-
-    [StringLength(512)]
+    [MaxLength(512)]
     public string? ProfileImageUrl { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public DateTime UpdatedDate { get; set; }
 
-    [Column(TypeName = "datetime")]
-    public DateTime? CreatedDate { get; set; }
-
-    [Column(TypeName = "datetime")]
-    public DateTime? UpdatedDate { get; set; }
-
-    [InverseProperty("User")]
     public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
 }
